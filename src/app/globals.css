@@ -8,16 +8,25 @@
   padding: 0;
 }
 
-body {
-  font-family: Roboto, sans-serif, Arial, Helvetica,;
-  font-size: 14px;
-  background: #F8F8F8;
+@font-face {
+  font-family: "PPMori";
+  src: url("/font/PPMori-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-html, body {
+body {
+  font-family: Roboto, sans-serif, Arial, Helvetica;
+  font-size: 14px;
+  background: #f8f8f8;
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal overflow */
+  font-family: "PPMori", sans-serif;
 }
 
 @layer utilities {
@@ -44,10 +53,10 @@ html, body {
 
 .container1 {
   max-width: 100%; /* Full width by default */
-  padding-left: 1rem;  /* Padding on the left */
+  padding-left: 1rem; /* Padding on the left */
   padding-right: 1rem; /* Padding on the right */
-  margin-left: auto;   /* Center the container */
-  margin-right: auto;  /* Center the container */
+  margin-left: auto; /* Center the container */
+  margin-right: auto; /* Center the container */
 }
 
 @media (min-width: 640px) {
@@ -80,8 +89,6 @@ html, body {
   }
 }
 
-
-
 @keyframes slide3 {
   from {
     transform: translateX(0%);
@@ -92,7 +99,8 @@ html, body {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -106,7 +114,6 @@ html, body {
 
 .slider-content3 {
   width: 200%;
-  
 }
 
 .animate-slider3 {
@@ -129,7 +136,6 @@ html, body {
   transition: left 0.3s ease;
 }
 
-
 /* Hide scrollbar for Chrome, Safari, and Opera */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
@@ -141,21 +147,21 @@ html, body {
   scrollbar-width: none; /* Firefox */
 }
 .scrollable-div::-webkit-scrollbar {
-    width: 4px; /* Width of the scrollbar */
+  width: 4px; /* Width of the scrollbar */
 }
 
 .scrollable-div::-webkit-scrollbar-track {
-    background: #f1f0ee; /* Color of the track */
-    border-radius: 10px;
+  background: #f1f0ee; /* Color of the track */
+  border-radius: 10px;
 }
 
 .scrollable-div::-webkit-scrollbar-thumb {
-    background-color: #757373; /* Color of the scrollbar thumb (indicator) */
-    border-radius: 10px; /* Optional: to round the thumb edges */
+  background-color: #757373; /* Color of the scrollbar thumb (indicator) */
+  border-radius: 10px; /* Optional: to round the thumb edges */
 }
 
 .div-email {
   text-decoration: none; /* Ensures there's no underline */
-  border: none;          /* Removes any border */
-  outline: none;         /* Ensures there's no outline */
+  border: none; /* Removes any border */
+  outline: none; /* Ensures there's no outline */
 }

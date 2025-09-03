@@ -20,14 +20,13 @@ const navItems: NavItem[] = [
 
 const SideBar: React.FC = () => {
   return (
-      <aside className="min-h-screen bg-white text-[13px] font-semibold rounded-[30px] w-[full] col-span-3 px-[20px]">
-
-      <ul className="">
+    <aside className="min-h-screen bg-white text-[13px] font-semibold rounded-[30px] w-full col-span-3 px-[20px]">
+      <ul>
         {navItems.map((item) => (
-          <li key={item.name}>
+          <li key={item.name} className="border-b last:border-b-0">
             <a
               href={item.href}
-              className="flex items-center py-[17px] gap-[15px]  border-b "
+              className="flex items-center py-[17px] gap-[15px]"
             >
               <Image
                 src={item.icon}
