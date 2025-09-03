@@ -11,7 +11,7 @@ export default function Home() {
         <SideBar />
 
         {/* Main Content */}
-        <main className="col-span-9 px-[10px]">
+        <main className="col-span-10 px-[10px]">
           <ModeratorsTable />
         </main>
       </div>
