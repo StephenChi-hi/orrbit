@@ -20,7 +20,7 @@ const navItems: NavItem[] = [
 
 const SideBar: React.FC = () => {
   return (
-    <aside className="min-h-screen bg-white text-[13px] font-semibold rounded-[30px] w-full col-span-3 px-[20px]">
+    <aside className="min-h-screen bg-white text-[13px] font-semibold rounded-[30px] w-full col-span-2 px-[20px]">
       <ul>
         {navItems.map((item) => (
           <li key={item.name} className="border-b last:border-b-0">
